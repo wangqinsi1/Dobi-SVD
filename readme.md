@@ -18,7 +18,7 @@ We provide a new LLM-compression solution via SVD, unlocking new possibilities f
 
 
 
-![Overview](fig\overview.jpg)
+![Overview](fig/overview.jpg)
 
 Overview framework of Dobi-SVD: 1-3: Differentiable Truncation Position Training. By applying parameter renormalization for continuous rank ratio selection and using Taylor expansion to prevent gradient explosion, our method enables robust and adaptive optimization of truncation positions. 4: Weight Update. Using IPCA, we sequentially extract and optimally update weight matrix features. 5: Remapping. We resolve a long-overlooked limitation of traditional SVD-based compression through remapping, fully unlocking SVD’s potential for data compression.
 
@@ -26,7 +26,7 @@ Overview framework of Dobi-SVD: 1-3: Differentiable Truncation Position Training
 
 **The current release version includes:**
 
-- [X] **Models Release:** Models with compression ratios of **0.4, 0.6, 0.8** on **Llama-7b, Llama-2-7b, Llama-13b and Llama-2-13b** using Dobi-SVD. 
+- [x] **Models Release:** Models with compression ratios of **0.4, 0.6, 0.8** on **Llama-7b, Llama-2-7b, Llama-13b and Llama-2-13b** using Dobi-SVD. 
 - [x] **Performance Evaluation:** Perplexity evaluation on wikitext2, c4, ptb and accuracy evaluation on 7 commonsense task sets.
 - [x] **Complete Implementation Code of Dobi-SVD:** 
   - [x] Stable differentiable SVD rank training.
@@ -41,11 +41,9 @@ Overview framework of Dobi-SVD: 1-3: Differentiable Truncation Position Training
 
 Dobi-SVD v.s. BnB Implement on Language question-answering on NVIDIA TITAN Xp 12G and LLaMa-2-7B.
 
-<video controls width="600">   <source src="fig/llm_demo.mp4" type="video/mp4">  </video>
+https://github.com/user-attachments/assets/63c43c16-c6b2-4a6f-a197-726de2a234f4
 
 Dobi-SVD v.s. BnB Implement on Vision question-answering on NVIDIA TITAN Xp 12G and LlaVA-v1.5-7B.
-
-<video controls width="600">   <source src="fig/vlm_demo.mp4" type="video/mp4">  </video>
 
 
 
