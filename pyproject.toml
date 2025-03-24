@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dobisvd"
+version = "0.1"
+description = "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+dependencies = [
+    "lm_eval==0.4.7",
+    "torch==2.1.2",
+    "transformers==4.37.2",
+    "accelerate==0.26.0",
+    "datasets==3.3.2",
+    "triton==2.1.0",
+    "bitsandbytes==0.44.1",
+    "numpy==1.26.4",
+    "wandb==0.18.5",
+    "peft==0.13.2"
+]
+
+
+[project.optional-dependencies]
+eval = ["protobuf","datasets"]
+
+
+[project.urls]
+"Homepage" = "TODO"
+
+[tool.setuptools.packages.find]
+exclude = ["notebooks*", "scripts*"]

@@ -1,0 +1,40 @@
+{
+    "model_id": "llama-7b-hf",
+    "DATASET_NAME": "wikitext2",
+    "target_compression_ratio": 0.6,
+    "BETA": 10,
+    "CustomSVD": {
+        "val_epsilon": 1e-10,
+        "grad_epsilon": 100.0,
+        "K": 10,
+        "diff_epsilon": 1e-10,
+        "nTaylor": 11
+    },
+    "dataset_processing": {
+        "SEED": 0,
+        "SEQ_LEN": 2048,
+        "NSAMPLES_train": 256,
+        "NSAMPLES_val": 16,
+        "NSAMPLES_val_ppl": 256
+    },
+    "training_settings": {
+        "TA_num_train_epochs": 20,
+        "TA_warmup_steps": 0,
+        "TA_gradient_accumulation_steps": 8
+    },
+    "loss_function_settings": {
+        "lambda_reg": 50
+    },
+    "optimizer_settings": {
+        "scheduler_lr": 5,
+        "scheduler_step_size": 4,
+        "scheduler_gamma": 0.9
+    },
+    "dtype_settings": {
+        "model_load_dtype": "f16",
+        "computeSVD_dtype": "f32"
+    },
+    "no_svd_layer": [
+        "lm_head"
+    ]
+}
