@@ -77,7 +77,7 @@ pip install -e .
 
 We provide some decomposed models, please follow the instructions below to download and use them.
 
-#### 1. Download Model
+### 1. Download Model
 
 The model weight file is uploaded to Hugingface, you can download them by using the following command.
 
@@ -99,7 +99,7 @@ The current release model (0.4 means compression ratio = 40%):
 
  
 
-#### 2. Using Model
+### 2. Using Model
 
 You can use the model with the following code (after loading the model, the usage is exactly the same as Llama).
 Note that it is recommended to use it in this environment. We found that different versions of transformers can cause differences in model performance.
@@ -141,7 +141,7 @@ print(result)
 
 
 
-#### 3. Evaluate Model
+### 3. Evaluate Model
 
 You can quickly start evaluating the task performance of the downloaded model. We provide implementations for quickly evaluating ppl and accuracy on different datasets.  
 
@@ -176,7 +176,7 @@ You can run Dobi-SVD using the following command. This will take several hours t
 
 
 
-#### 1. Stable differentiable SVD rank training.
+### 1. Stable differentiable SVD rank training.
 
 Dobi-SVD supports stable backpropagation of low-rank matrices. You can use the following command to find the most appropriate rank for each layer of any model.
 
@@ -210,7 +210,7 @@ The intermediate and final results of the training will be saved in [./results/t
 
 
 
-#### 2. Weight update using IPCA.
+### 2. Weight update using IPCA.
 
 Dobi-SVD supports updating weights using IPCA. You can run the following command to implement it.
 
