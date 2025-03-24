@@ -45,6 +45,9 @@ https://github.com/user-attachments/assets/63c43c16-c6b2-4a6f-a197-726de2a234f4
 
 Dobi-SVD v.s. BnB Implement on Vision question-answering on NVIDIA TITAN Xp 12G and LlaVA-v1.5-7B.
 
+https://github.com/user-attachments/assets/9df02262-fa6b-42ae-b2a7-d866506fa80c
+
+
 
 
 
