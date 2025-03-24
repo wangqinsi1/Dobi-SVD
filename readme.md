@@ -26,12 +26,14 @@ Overview framework of Dobi-SVD: 1-3: Differentiable Truncation Position Training
 
 **The current release version includes:**
 
-- [x] **Models Release:** Models with compression ratios of **0.4, 0.6, 0.8** on **Llama-7b, Llama-2-7b, Llama-13b and Llama-2-13b** using Dobi-SVD. 
-- [x] **Performance Evaluation:** Perplexity evaluation on wikitext2, c4, ptb and accuracy evaluation on 7 commonsense task sets.
-- [x] **Complete Implementation Code of Dobi-SVD:** 
-  - [x] Stable differentiable SVD rank training.
-  - [x] Weight update using IPCA.
-  - [x] Remapping storage of decomposed models.
+✅  **Models Release:** Models with compression ratios of **0.4, 0.6, 0.8** on **Llama-7b, Llama-2-7b, Llama-13b and Llama-2-13b** using Dobi-SVD. 
+
+✅  **Performance Evaluation:** Perplexity evaluation on wikitext2, c4, ptb and accuracy evaluation on 7 commonsense task sets.
+
+✅  **Complete Implementation Code of Dobi-SVD:** 
+  -  Stable differentiable SVD rank training.
+  -  Weight update using IPCA.
+  -  Remapping storage of decomposed models.
 
 
 
