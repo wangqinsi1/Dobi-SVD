@@ -249,8 +249,6 @@ In addition to the above-mentioned Dobi-SVD implementation, our work also includ
 
   
 
-
-
 ## Paper and Citation
 
 More technical details can be found in our paper. If you find Dobi-SVD useful or relevant to your project and research, please kindly cite our paper:
@@ -267,4 +265,18 @@ url={https://openreview.net/forum?id=kws76i5XB8}
 ```
 
 
+## License
+This project is licensed under the MIT License.
+
+
+
+## Co-First Author Contributions
+
+Differences in the primary contributions of the two co–first authors:
+
+**Qinsi Wang** — Established the optimality of directly truncating activations; identified the root cause of gradient explosion in differentiable SVD in Pytorch; proposed obtaining new weights via IPCA; conducted the majority of experiments and built the VLM demos.
+
+**Jinghan Ke** — Implemented the Taylor-expansion–based solution to the gradient-explosion issue; leveraged quantization-friendly properties to perform remapping, addressing the theoretical bottleneck that singular-value information is under-utilized during truncation; vision-related work: designed the overview figure, created the Dobi-style project page (including several descriptions not present in the paper, reflecting personal perspectives and interpretations), and produced the project video.
+
+Note: The final results were made possible by extensive joint discussion, experimentation, cross-validation, and mutual critique. **When contacting us by email, please include both authors.**
 
